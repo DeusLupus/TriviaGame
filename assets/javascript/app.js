@@ -26,7 +26,7 @@ $(document).ready(function() {
 	//import JSON file with array of objects and start printing to screen
 	$.getJSON( "assets/javascript/questions.json", function( json ) {
 	  $.each(answers, function(index, value) {
-	  	var $answer = $("<input type="radio" >").addClass("ans").text(answers[index].answer);
+	  	var $answer = $('<input type="radio" >').addClass("ans").text(answers[index].answer);
 	  	console.log($answer);
 	  	$("#image").html("<img src=answers[index].img>");
 	  	
