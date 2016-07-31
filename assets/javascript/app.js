@@ -25,18 +25,9 @@
 $(document).ready(function() {
 	//import JSON file with array of objects and start printing to screen
 	$.getJSON( "assets/javascript/questions.json", function( json ) {
-	  $.each(answers, function(index, value) {
-	  	
-		var $answer = $('<input type="radio" >').addClass("ans").each(answers.answer, function(index){
-			$.text(answers[index].answer);
-		});
-
-	  	$("#image").html('<img src=' + answers[index].img + '>');
-	  	
-	  	$("#answers").text($answer);
-
-	  });
-
+		for (var i = 0 ; i < answers.length ; i++) {
+			$("#image").html(answers[i]);
+		}
 	});
 
 })
