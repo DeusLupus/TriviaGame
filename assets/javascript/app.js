@@ -23,9 +23,17 @@
 * On the final screen, show the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page).
 */
 $(document).ready(function() {
+	//import JSON file with array of objects and start printing to screen
 	$.getJSON( "assets/javascript/questions.json", function( json ) {
 	  $.each(answers, function(index, value) {
-	  	var $answer = $("<input type="radio" />");
-	  })
-	 });
+	  	var $answer = $("<input type="radio" >").addClass("ans").text(answers[index].answer);
+	  	console.log($answer);
+	  	$("#image").html("<img src=answers[index].img>");
+	  	
+	  	$("#answers").text($answer);
+
+	  });
+
+	});
+
 })
