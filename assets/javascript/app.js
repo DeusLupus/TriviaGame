@@ -27,7 +27,7 @@ $(document).ready(function() {
 	$.getJSON( "assets/javascript/questions.json", function( json ) {
 	  $.each(answers, function(index, value) {
 	  	var $answer = $('<input type="radio" >').addClass("ans").text(answers[index].answer);
-	  	console.log($answer);
+	  	console.log(answers[index].answer);
 	  	$("#image").html("<img src=answers[index].img>");
 	  	
 	  	$("#answers").text($answer);
