@@ -25,7 +25,7 @@
 $(document).ready(function() {
 	$.getJSON( "assets/javascript/questions.json", function( json ) {
 	  $.each(answers, function(index, value) {
-	  	var $answer = $("<input type="radio" name="index">");
-	  });
+	  	var $answer = $("<input type="radio" />");
+	  })
 	 });
 })
