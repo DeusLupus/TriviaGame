@@ -2,7 +2,7 @@
 	"answers": [
 		{
 			"answer": ["Salamence", "Druddigon", "Tiamat", "Noivern"],
-			"img": "assets/images/image1.jpg"
+			"img": "../images/image1.jpg"
 		},
 		{
 			"answer": ["Landorus", "Thundurus", "Tornadus", "Zeus"],
