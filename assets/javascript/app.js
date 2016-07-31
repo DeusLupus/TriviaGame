@@ -24,8 +24,8 @@
 */
 $(document).ready(function() {
 	$.getJSON( "assets/javascript/questions.json", function( json ) {
-	  console.log( "JSON Data: " + json.answers );
+	  $.each(answers, function(index, value) {
+	  	var $answer = $("<input type="radio" name="index">");
+	  })
 	 });
-
-	
 })
