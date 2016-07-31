@@ -1,0 +1,17 @@
+h1 {
+	font-weight: bolder;
+	text-align: center;
+	color: black;
+}
+
+#questionblock {
+	background-image: url(../images/pokemon_background.jpg);
+}
+
+#image {
+	size 33%;
+}
+
+#answers {
+	size: 66%;
+}
